@@ -19,8 +19,8 @@
                 $("#shortUrl").val('');
                 $.ajax({
                     type: "POST",
-                    // url: "https://url-shortener-backend-node.onrender.com/add",
-                    url: "http://localhost:8080/add",
+                    url: "https://url-shortener-backend-node.onrender.com/add",
+                    // url: "http://localhost:8080/add",
                     data: JSON.stringify({ full_url: $("#fullUrl").val() }),
                     contentType: "application/json; charset=utf-8",                
                     success: function(ret) {
